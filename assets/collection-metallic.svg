@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Brushed metallic, champagne and satin matte architectural surface swatches">
+  <defs>
+    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050609"/>
+      <stop offset="100%" stop-color="#0b1018"/>
+    </linearGradient>
+    <linearGradient id="champagne" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4e4033"/>
+      <stop offset="35%" stop-color="#b99c7c"/>
+      <stop offset="55%" stop-color="#e4ceb2"/>
+      <stop offset="80%" stop-color="#876d53"/>
+      <stop offset="100%" stop-color="#352b22"/>
+    </linearGradient>
+    <linearGradient id="gunmetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#141b24"/>
+      <stop offset="45%" stop-color="#39495c"/>
+      <stop offset="68%" stop-color="#60768f"/>
+      <stop offset="100%" stop-color="#0d131b"/>
+    </linearGradient>
+    <linearGradient id="roseBronze" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c1722"/>
+      <stop offset="45%" stop-color="#8b4263"/>
+      <stop offset="65%" stop-color="#d28aa9"/>
+      <stop offset="100%" stop-color="#1f0e16"/>
+    </linearGradient>
+    <linearGradient id="obsidianMatte" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c1118"/>
+      <stop offset="50%" stop-color="#18222e"/>
+      <stop offset="100%" stop-color="#06080c"/>
+    </linearGradient>
+    <pattern id="brushedLines" width="120" height="6" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="1" x2="120" y2="1" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+      <line x1="0" y1="4" x2="120" y2="4" stroke="#000000" stroke-opacity="0.14" stroke-width="1"/>
+    </pattern>
+    <filter id="cardDrop" x="-15%" y="-15%" width="135%" height="135%">
+      <feDropShadow dx="16" dy="22" stdDeviation="18" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#fbg)"/>
+  <circle cx="880" cy="240" r="320" fill="#007BA7" opacity="0.15"/>
+  <circle cx="310" cy="670" r="280" fill="#FF2F86" opacity="0.14"/>
+
+  <!-- Layered Swatch Stack -->
+  <g filter="url(#cardDrop)">
+    <!-- Board 1: Obsidian Soft Matte -->
+    <g transform="translate(150,155) rotate(-5)">
+      <rect x="0" y="0" width="420" height="530" fill="url(#obsidianMatte)" stroke="#00A6D6" stroke-opacity="0.55" stroke-width="2"/>
+      <rect x="0" y="0" width="420" height="530" fill="url(#brushedLines)" opacity="0.4"/>
+      <line x1="28" y1="460" x2="392" y2="460" stroke="#00A6D6" stroke-opacity="0.4"/>
+      <text x="28" y="495" font-family="monospace" font-size="14" fill="#a8b7c2" letter-spacing="2">01 // CARBON MATTE</text>
+    </g>
+
+    <!-- Board 2: Gunmetal Anodized -->
+    <g transform="translate(345,135) rotate(-1)">
+      <rect x="0" y="0" width="420" height="530" fill="url(#gunmetal)" stroke="#00A6D6" stroke-opacity="0.65" stroke-width="2"/>
+      <rect x="0" y="0" width="420" height="530" fill="url(#brushedLines)"/>
+      <line x1="28" y1="460" x2="392" y2="460" stroke="#ffffff" stroke-opacity="0.25"/>
+      <text x="28" y="495" font-family="monospace" font-size="14" fill="#d7e4ee" letter-spacing="2">02 // TITANIUM BRUSHED</text>
+    </g>
+
+    <!-- Board 3: Champagne Gold Metallic -->
+    <g transform="translate(530,170) rotate(3)">
+      <rect x="0" y="0" width="420" height="530" fill="url(#champagne)" stroke="#ffffff" stroke-opacity="0.45" stroke-width="2"/>
+      <rect x="0" y="0" width="420" height="530" fill="url(#brushedLines)"/>
+      <line x1="28" y1="460" x2="392" y2="460" stroke="#221911" stroke-opacity="0.35"/>
+      <text x="28" y="495" font-family="monospace" font-size="14" fill="#1d150e" letter-spacing="2">03 // CHAMPAGNE SATIN</text>
+    </g>
+
+    <!-- Floating Accent Swatch: Rose Copper -->
+    <g transform="translate(765,420) rotate(6)">
+      <rect x="0" y="0" width="275" height="275" fill="url(#roseBronze)" stroke="#FF2F86" stroke-opacity="0.8" stroke-width="2"/>
+      <rect x="0" y="0" width="275" height="275" fill="url(#brushedLines)"/>
+      <text x="22" y="240" font-family="monospace" font-size="13" fill="#ffe6f1" letter-spacing="2">04 // COPPER INLAY</text>
+    </g>
+  </g>
+
+  <g transform="translate(150,795)" font-family="monospace" font-size="15" fill="#00A6D6" letter-spacing="2">
+    <text x="0" y="0">SURFACE FINISHES // BRUSHED METALLIC · SATIN · MATTE</text>
+    <text x="695" y="0" fill="#FF2F86">ARCHITECTURAL GRADE</text>
+  </g>
+</svg>

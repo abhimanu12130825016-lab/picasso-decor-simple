@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Bookmatched marble-look UV surface sheet visualization">
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050609"/>
+      <stop offset="100%" stop-color="#0a1219"/>
+    </linearGradient>
+    <linearGradient id="slabL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dde4ea"/>
+      <stop offset="45%" stop-color="#b6c2cc"/>
+      <stop offset="100%" stop-color="#768796"/>
+    </linearGradient>
+    <linearGradient id="slabR" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#dde4ea"/>
+      <stop offset="45%" stop-color="#b6c2cc"/>
+      <stop offset="100%" stop-color="#768796"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.34"/>
+      <stop offset="38%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#00A6D6" stop-opacity="0.16"/>
+    </linearGradient>
+    <linearGradient id="goldVein" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d29c5a"/>
+      <stop offset="50%" stop-color="#f2cf9b"/>
+      <stop offset="100%" stop-color="#8b6233"/>
+    </linearGradient>
+    <filter id="mShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="22" stdDeviation="22" flood-color="#000000" flood-opacity="0.78"/>
+    </filter>
+    <clipPath id="leftSlabClip">
+      <rect x="170" y="130" width="422" height="590"/>
+    </clipPath>
+    <clipPath id="rightSlabClip">
+      <rect x="608" y="130" width="422" height="590"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#mbg)"/>
+  <circle cx="920" cy="210" r="290" fill="#00A6D6" opacity="0.11"/>
+  <circle cx="290" cy="700" r="250" fill="#FF2F86" opacity="0.1"/>
+
+  <g filter="url(#mShadow)">
+    <!-- Left Bookmatch Slab -->
+    <rect x="170" y="130" width="422" height="590" fill="url(#slabL)" stroke="#00A6D6" stroke-opacity="0.55" stroke-width="2"/>
+    <g clip-path="url(#leftSlabClip)">
+      <path d="M592 175 C515 245 480 265 420 340 C360 415 315 440 230 560 C195 610 170 650 150 695" fill="none" stroke="#314150" stroke-width="26" stroke-opacity="0.22" stroke-linecap="round"/>
+      <path d="M592 182 C520 250 475 275 415 352 C355 428 295 470 210 590" fill="none" stroke="#1e2a35" stroke-width="6" stroke-opacity="0.48"/>
+      <path d="M592 186 C526 248 486 286 430 356 C374 426 300 472 222 586" fill="none" stroke="url(#goldVein)" stroke-width="2.5" stroke-opacity="0.88"/>
+      <path d="M592 435 C500 475 445 535 370 595 C305 648 250 680 185 725" fill="none" stroke="#243340" stroke-width="14" stroke-opacity="0.24"/>
+      <path d="M592 442 C510 482 445 544 378 602 C310 660 255 692 195 730" fill="none" stroke="url(#goldVein)" stroke-width="2.2" stroke-opacity="0.8"/>
+      <path d="M400 130 C350 220 305 265 215 335" fill="none" stroke="#283847" stroke-width="4" stroke-opacity="0.35"/>
+      <path d="M430 350 C495 360 540 390 592 405" fill="none" stroke="#202e3a" stroke-width="2.5" stroke-opacity="0.45"/>
+      <rect x="170" y="130" width="422" height="590" fill="url(#sheen)"/>
+    </g>
+
+    <!-- Right Bookmatch Slab (Mirrored Symmetry) -->
+    <rect x="608" y="130" width="422" height="590" fill="url(#slabR)" stroke="#00A6D6" stroke-opacity="0.55" stroke-width="2"/>
+    <g clip-path="url(#rightSlabClip)">
+      <path d="M608 175 C685 245 720 265 780 340 C840 415 885 440 970 560 C1005 610 1030 650 1050 695" fill="none" stroke="#314150" stroke-width="26" stroke-opacity="0.22" stroke-linecap="round"/>
+      <path d="M608 182 C680 250 725 275 785 352 C845 428 905 470 990 590" fill="none" stroke="#1e2a35" stroke-width="6" stroke-opacity="0.48"/>
+      <path d="M608 186 C674 248 714 286 770 356 C826 426 900 472 978 586" fill="none" stroke="url(#goldVein)" stroke-width="2.5" stroke-opacity="0.88"/>
+      <path d="M608 435 C700 475 755 535 830 595 C895 648 950 680 1015 725" fill="none" stroke="#243340" stroke-width="14" stroke-opacity="0.24"/>
+      <path d="M608 442 C690 482 755 544 822 602 C890 660 945 692 1005 730" fill="none" stroke="url(#goldVein)" stroke-width="2.2" stroke-opacity="0.8"/>
+      <path d="M800 130 C850 220 895 265 985 335" fill="none" stroke="#283847" stroke-width="4" stroke-opacity="0.35"/>
+      <path d="M770 350 C705 360 660 390 608 405" fill="none" stroke="#202e3a" stroke-width="2.5" stroke-opacity="0.45"/>
+      <rect x="608" y="130" width="422" height="590" fill="url(#sheen)"/>
+    </g>
+
+    <!-- Precision metallic bookmatch seam -->
+    <line x1="600" y1="120" x2="600" y2="730" stroke="#00A6D6" stroke-width="1.5" stroke-dasharray="6 6" opacity="0.75"/>
+  </g>
+
+  <!-- Technical Spec Caption -->
+  <g transform="translate(170,775)" font-family="monospace" font-size="15" fill="#00A6D6" letter-spacing="2">
+    <text x="0" y="0">BOOKMATCH // HIGH-GLOSS UV &amp; STONE-LOOK SHEETS</text>
+    <text x="645" y="0" fill="#FF2F86">SEAMLESS FEATURE PANELS</text>
+  </g>
+</svg>

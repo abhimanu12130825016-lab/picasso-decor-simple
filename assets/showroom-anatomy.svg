@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" role="img" aria-label="Exploded architectural cross-section diagram of a 5-layer decorative wall panel">
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#04060a"/>
+      <stop offset="100%" stop-color="#09131e"/>
+    </linearGradient>
+    <linearGradient id="p1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c131c"/>
+      <stop offset="100%" stop-color="#192838"/>
+    </linearGradient>
+    <linearGradient id="p2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#005576"/>
+      <stop offset="100%" stop-color="#008ab8"/>
+    </linearGradient>
+    <linearGradient id="p3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2c1020"/>
+      <stop offset="100%" stop-color="#FF2F86" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="p4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8c7d4"/>
+      <stop offset="100%" stop-color="#5e7285"/>
+    </linearGradient>
+    <linearGradient id="p5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00A6D6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FF2F86" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="isoDrop" x="-15%" y="-15%" width="140%" height="140%">
+      <feDropShadow dx="10" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.72"/>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="820" fill="url(#abg)"/>
+  <circle cx="320" cy="400" r="260" fill="#007BA7" opacity="0.14"/>
+  <circle cx="680" cy="360" r="220" fill="#FF2F86" opacity="0.09"/>
+
+  <!-- Isometric Exploded Layer Stack -->
+  <g filter="url(#isoDrop)">
+    <!-- Layer 01: Moisture Barrier Backing -->
+    <polygon points="130,220 340,140 340,560 130,640" fill="url(#p1)" stroke="#00A6D6" stroke-width="1.8"/>
+    <!-- Layer 02: Structural WPC/PVC Core -->
+    <polygon points="220,235 430,155 430,575 220,655" fill="url(#p2)" stroke="#00A6D6" stroke-width="1.8" fill-opacity="0.88"/>
+    <!-- Layer 03: Bonding / Acoustic Interlayer -->
+    <polygon points="310,250 520,170 520,590 310,670" fill="url(#p3)" stroke="#FF2F86" stroke-width="1.8" fill-opacity="0.85"/>
+    <!-- Layer 04: High-Definition Decorative Film -->
+    <polygon points="400,265 610,185 610,605 400,685" fill="url(#p4)" stroke="#ffffff" stroke-opacity="0.7" stroke-width="1.8"/>
+    <!-- Layer 05: UV Scratch-Resistant Topcoat -->
+    <polygon points="490,280 700,200 700,620 490,700" fill="url(#p5)" stroke="#00A6D6" stroke-width="2"/>
+  </g>
+
+  <!-- Leader Lines & Spec Labels -->
+  <g font-family="monospace" font-size="14" letter-spacing="1.5">
+    <line x1="255" y1="175" x2="735" y2="175" stroke="#00A6D6" stroke-opacity="0.55" stroke-dasharray="4 4"/>
+    <circle cx="255" cy="175" r="4" fill="#00A6D6"/>
+    <text x="752" y="172" fill="#00A6D6">01 // SUBSTRATE BACKING</text>
+    <text x="752" y="194" fill="#a8b7c2" font-size="12">Damp &amp; termite barrier base</text>
+
+    <line x1="345" y1="265" x2="735" y2="265" stroke="#00A6D6" stroke-opacity="0.55" stroke-dasharray="4 4"/>
+    <circle cx="345" cy="265" r="4" fill="#00A6D6"/>
+    <text x="752" y="262" fill="#00A6D6">02 // ENGINEERED CORE</text>
+    <text x="752" y="284" fill="#a8b7c2" font-size="12">High-density WPC / PVC / SPC</text>
+
+    <line x1="435" y1="355" x2="735" y2="355" stroke="#FF2F86" stroke-opacity="0.65" stroke-dasharray="4 4"/>
+    <circle cx="435" cy="355" r="4" fill="#FF2F86"/>
+    <text x="752" y="352" fill="#FF2F86">03 // BONDING INTERLAYER</text>
+    <text x="752" y="374" fill="#a8b7c2" font-size="12">Thermal-fused stability layer</text>
+
+    <line x1="525" y1="445" x2="735" y2="445" stroke="#00A6D6" stroke-opacity="0.55" stroke-dasharray="4 4"/>
+    <circle cx="525" cy="445" r="4" fill="#00A6D6"/>
+    <text x="752" y="442" fill="#f7f8fa">04 // ARCHITECTURAL DECOR</text>
+    <text x="752" y="464" fill="#a8b7c2" font-size="12">Vein, wood, stone or metallic</text>
+
+    <line x1="615" y1="535" x2="735" y2="535" stroke="#00A6D6" stroke-opacity="0.55" stroke-dasharray="4 4"/>
+    <circle cx="615" cy="535" r="4" fill="#00A6D6"/>
+    <text x="752" y="532" fill="#00A6D6">05 // UV PROTECTIVE SHIELD</text>
+    <text x="752" y="554" fill="#a8b7c2" font-size="12">Easy-wipe satin / gloss coat</text>
+  </g>
+
+  <text x="130" y="765" font-family="monospace" font-size="14" fill="#00A6D6" letter-spacing="2">TECHNICAL SECTION // MULTI-LAYER SURFACE ARCHITECTURE</text>
+</svg>

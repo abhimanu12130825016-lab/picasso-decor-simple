@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 840" role="img" aria-label="Modern luxury living room feature wall combining fluted side bays and bookmatched marble center slab">
+  <defs>
+    <linearGradient id="roomBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#05070c"/>
+      <stop offset="68%" stop-color="#0b111a"/>
+      <stop offset="100%" stop-color="#040508"/>
+    </linearGradient>
+    <linearGradient id="ceilingGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00A6D6" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#00A6D6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="warmGraze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffd5a6" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#ffd5a6" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffd5a6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="centerMarble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfe6ec"/>
+      <stop offset="50%" stop-color="#aebbc7"/>
+      <stop offset="100%" stop-color="#6b7b8a"/>
+    </linearGradient>
+    <linearGradient id="walnutFlute" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1b1411"/>
+      <stop offset="50%" stop-color="#473328"/>
+      <stop offset="100%" stop-color="#140f0c"/>
+    </linearGradient>
+    <pattern id="fluteBay" width="22" height="500" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="15" height="500" fill="url(#walnutFlute)"/>
+      <rect x="15" y="0" width="7" height="500" fill="#080a0f"/>
+    </pattern>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c121a"/>
+      <stop offset="100%" stop-color="#040508"/>
+    </linearGradient>
+    <filter id="panelGlow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- Room Shell -->
+  <rect width="1440" height="840" fill="url(#roomBg)"/>
+
+  <!-- Ceiling & Architectural Cove -->
+  <polygon points="0,0 1440,0 1320,105 120,105" fill="#070b12" stroke="#007BA7" stroke-opacity="0.3"/>
+  <rect x="140" y="105" width="1160" height="8" fill="#00A6D6" opacity="0.72"/>
+  <rect x="140" y="113" width="1160" height="190" fill="url(#ceilingGlow)"/>
+
+  <!-- Left & Right Fluted Side Bays -->
+  <g filter="url(#panelGlow)">
+    <rect x="140" y="113" width="290" height="515" fill="url(#fluteBay)" stroke="#007BA7" stroke-opacity="0.35"/>
+    <rect x="1010" y="113" width="290" height="515" fill="url(#fluteBay)" stroke="#007BA7" stroke-opacity="0.35"/>
+
+    <!-- Warm vertical grazing glow strips -->
+    <rect x="430" y="113" width="6" height="515" fill="#ffd9ad" opacity="0.8"/>
+    <rect x="436" y="113" width="38" height="515" fill="url(#warmGraze)"/>
+    <rect x="1004" y="113" width="6" height="515" fill="#ffd9ad" opacity="0.8"/>
+    <rect x="966" y="113" width="38" height="515" fill="url(#warmGraze)"/>
+
+    <!-- Center Bookmatched Marble Feature Wall -->
+    <rect x="448" y="113" width="544" height="515" fill="url(#centerMarble)" stroke="#00A6D6" stroke-opacity="0.6" stroke-width="2"/>
+    <g opacity="0.68" fill="none" stroke-linecap="round">
+      <path d="M720 155 C665 230 610 275 535 375 C495 425 468 480 450 535" stroke="#30404f" stroke-width="14" stroke-opacity="0.24"/>
+      <path d="M720 160 C668 232 612 280 540 378 C498 430 470 484 452 538" stroke="#c89455" stroke-width="2.5"/>
+      <path d="M720 155 C775 230 830 275 905 375 C945 425 972 480 990 535" stroke="#30404f" stroke-width="14" stroke-opacity="0.24"/>
+      <path d="M720 160 C772 232 828 280 900 378 C942 430 970 484 988 538" stroke="#c89455" stroke-width="2.5"/>
+      <path d="M720 390 C665 445 615 510 545 595" stroke="#22313e" stroke-width="4" stroke-opacity="0.45"/>
+      <path d="M720 390 C775 445 825 510 895 595" stroke="#22313e" stroke-width="4" stroke-opacity="0.45"/>
+    </g>
+    <line x1="720" y1="113" x2="720" y2="628" stroke="#1e2a36" stroke-opacity="0.35" stroke-width="1.5"/>
+
+    <!-- Minimalist Floating Media Console -->
+    <rect x="490" y="556" width="460" height="58" fill="#0d131b" stroke="#00A6D6" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect x="490" y="614" width="460" height="4" fill="#FF2F86" opacity="0.72"/>
+    <rect x="520" y="578" width="120" height="14" fill="#182330"/>
+    <rect x="660" y="578" width="120" height="14" fill="#182330"/>
+    <rect x="800" y="578" width="120" height="14" fill="#182330"/>
+  </g>
+
+  <!-- Floor Perspective -->
+  <polygon points="120,628 1320,628 1440,840 0,840" fill="url(#floorGrad)" stroke="#007BA7" stroke-opacity="0.3"/>
+  <!-- Soft floor reflection -->
+  <rect x="448" y="630" width="544" height="90" fill="#dbe5ee" opacity="0.06"/>
+  <rect x="140" y="630" width="1160" height="45" fill="#00A6D6" opacity="0.05"/>
+
+  <!-- Architectural Elevation Label -->
+  <g transform="translate(140,785)" font-family="monospace" font-size="15" fill="#00A6D6" letter-spacing="2">
+    <text x="0" y="0">ELEVATION 01 // FEATURE WALL SYSTEM: WALNUT FLUTED BAYS + BOOKMATCH MARBLE + COVE LED</text>
+  </g>
+</svg>

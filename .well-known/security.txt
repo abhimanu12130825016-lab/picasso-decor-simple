@@ -1,0 +1,4 @@
+# Security Policy for Picasso Decor
+Contact: https://maps.app.goo.gl/wkUxx7rCNajeeHnAA
+Preferred-Languages: en, hi, bn
+Policy: Static showcase site; no user accounts, cookies, or payment data collected.
